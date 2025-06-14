@@ -1,3 +1,3 @@
-module github.com/rmerry/go-envconf
+module github.com/rmerry/envconf
 
 go 1.22.7

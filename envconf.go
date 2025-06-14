@@ -1,5 +1,5 @@
 /*
-Package goenvconf provides functionality for populating structs with values
+Package envconf provides functionality for populating structs with values
 defined in environment variables.
 
 The following basic types are supported:
@@ -31,7 +31,7 @@ Usage:
 	}
 
 	func main() {
-		var cfg Config goenvconf.Process(&cfg)
+		var cfg Config envconf.Process(&cfg)
 		// ...
 	}
 
@@ -44,7 +44,7 @@ Supported Tag Attributes:
     Note: If both `required` and `default` are
     provided the `required` tag is ignored.
 */
-package goenvconf
+package envconf
 
 import (
 	"fmt"

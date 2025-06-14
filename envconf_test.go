@@ -1,4 +1,4 @@
-package goenvconf
+package envconf
 
 import (
 	"math"

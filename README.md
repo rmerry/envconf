@@ -1,6 +1,6 @@
-# go-envconf
+# envconf
 
-`go-envconf` is a very lightweight Go library for populating structs from environment variables using struct tags. It supports all basic Go types and offers the ability to set default values and marking a value as required.
+`envconf` is a very lightweight Go library for populating structs from environment variables using struct tags. It supports all basic Go types and offers the ability to set default values and marking a value as required.
 
 ## Features
 
@@ -14,7 +14,7 @@
 ## Installation
 
 ```bash
-go get github.com/rmerry/goenvconf
+go get github.com/rmerry/envconf
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/rmerry/goenvconf"
+	"github.com/rmerry/envconf"
 )
 
 type Config struct {
@@ -36,7 +36,7 @@ type Config struct {
 
 func main() {
 	var cfg Config
-	goenvconf.Process(&cfg)
+	envconf.Process(&cfg)
 	fmt.Printf("%+v\n", cfg)
 }
 ```
